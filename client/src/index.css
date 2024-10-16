@@ -1,0 +1,91 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.marker {
+  transform: translate(-50%, -100%);
+}
+
+.error {
+  color: #f05305;
+}
+
+.marker.red path {
+  fill: #f05305;
+}
+
+.marker.yellow path {
+  fill: #F3B73E;
+}
+
+.popup {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+.popup img {
+  height: 200px;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.trip-form label,
+.trip-form input,
+.trip-form textarea,
+.trip-form button {
+  font-size: 1rem;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: 500px;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+  min-height: 600px;
+}
+
+.image-gallery-thumbnail {
+  width: 120px
+}
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px;
+}
+
+.custom-modal-size {
+  width: auto;
+  height: 200px;
+}
+
+.image-gallery-slide-wrapper {
+  z-index: 0;
+}
